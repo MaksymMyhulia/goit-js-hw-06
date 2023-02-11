@@ -14,12 +14,11 @@ const images = [
 ];
 const listEl = document.querySelector('.gallery');
 const markup = images.map(image => {
-  listEl.insertAdjacentHTML('beforeend', `<li><img url = ${image.url}, alt = ${image.alt}/></li>`)
-  
+  listEl.insertAdjacentHTML('beforeend', `<li><img src = ${image.url} , alt = ${image.alt}, width = 300/></li>`)
 }
   );
-  listEl.style.display = 'flex';
-  listEl.style.flexDirection = 'column';
+  listEl.setAttribute("style", "list-style-type:none; display: flex; flex-direction: column;");
+  
   
 //Напиши скрипт для створення галереї зображень на підставі масиву даних. HTML містить список ul.gallery.
 

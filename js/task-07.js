@@ -1,6 +1,8 @@
 const inputEl = document.querySelector("#font-size-control");
 const textEl = document.querySelector("#text");
 inputEl.setAttribute("step", 1);
+inputEl.setAttribute("value", 16);
+
 function changeSize (event) {
 const sizeOfFont = event.currentTarget.value;
 textEl.style.fontSize = `${sizeOfFont}px`;
@@ -17,4 +19,5 @@ inputEl.addEventListener('input', changeSize)
 
 //<input id="font-size-control" type="range" min="16" max="96" />
 //<br />
-//<span id="text">Abracadabra!</span>
+//<span id="text">Abracadabra!</span> 
+//початковий font size спана має бути початковим значенням інпута.

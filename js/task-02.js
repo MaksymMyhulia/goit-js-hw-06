@@ -8,18 +8,12 @@ const ingredients = [
 ];
 
 const listEl = document.querySelector('#ingredients');
-
-function makeItemEl (ingredients) {
-  for (const ingredient of ingredients) {
-    const itemEl = document.createElement('li');
+ingredients.map((ingredient) => {
+  const itemEl = document.createElement('li');
     itemEl.textContent = ingredient;
     itemEl.classList.add('item');
     listEl.append(itemEl);
-  }
-  
-}
-makeItemEl(ingredients);
-
+})
 
 
 //HTML містить порожній список ul#ingredients.

@@ -1,18 +1,11 @@
-const categoriesEl = document.querySelectorAll(".item");
-console.log(`Number of categories: ${categoriesEl.length}`);
+const categoriesArray = document.querySelectorAll(".item");
+console.log(`Number of categories: ${categoriesArray.length}`);
 
-const categoriesTitleEL = document.querySelectorAll("h2");
-const animalsItems = categoriesEl[0].querySelectorAll("li");
-const productsItems = categoriesEl[1].querySelectorAll("li");
-const technologiesItems = categoriesEl[2].querySelectorAll("li");
-
-function getInformation (element) {
-    console.log(`Category: ${element.textContent}`);
-    console.log(`Elements: ${element.nextElementSibling.children.length}`)
-}
-getInformation(categoriesTitleEL[0])
-getInformation(categoriesTitleEL[1])
-getInformation(categoriesTitleEL[2])
+const categorierArr = [...categoriesArray].forEach((categories) => {
+console.log( `Category: ${categories.children[0].textContent}
+Elements: ${categories.children[1].children.length}`)  
+})
+ 
 
 //Напиши скрипт, який:
 

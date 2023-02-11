@@ -1,6 +1,6 @@
 const button = document.querySelector(".change-color");
-const container = document.querySelector(".widget");
 const colorValue = document.querySelector(".color");
+const body = document.querySelector("body");
 
 
 function getRandomHexColor() {
@@ -8,7 +8,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 function changeColor() {
-container.style.backgroundColor = getRandomHexColor();
+body.style.backgroundColor = getRandomHexColor();
 colorValue.textContent = getRandomHexColor();
 }
 button.addEventListener("click", changeColor);
@@ -27,3 +27,5 @@ button.addEventListener("click", changeColor);
   //  .toString(16)
   //  .padStart(6, 0)}`;
 //}
+
+//Задання 9 - Колір має змінюватись на body і у вас не співпадає фон діва з текстовим контентом спана. 

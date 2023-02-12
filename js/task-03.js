@@ -12,12 +12,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const listEl = document.querySelector('.gallery');
-const markup = images.map(image => {
-  listEl.insertAdjacentHTML('beforeend', `<li><img src = ${image.url} , alt = ${image.alt}, width = 300/></li>`)
+const gallery = document.querySelector('.gallery');
+const renderGallery = images.map(image => {
+  return `<li><img src = ${image.url} , alt = ${image.alt}, width = 300/></li>`
 }
   );
-  listEl.setAttribute("style", "list-style-type:none; display: flex; flex-direction: column;");
+  const galleryMarkup = renderGallery.join('');
+  gallery.insertAdjacentHTML('beforeend', galleryMarkup)
+  gallery.setAttribute("style", "list-style-type:none; display: flex; flex-direction: column;");
   
   
 //Напиши скрипт для створення галереї зображень на підставі масиву даних. HTML містить список ul.gallery.

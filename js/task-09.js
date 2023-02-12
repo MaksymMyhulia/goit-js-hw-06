@@ -9,7 +9,7 @@ function getRandomHexColor() {
 }
 function changeColor() {
 body.style.backgroundColor = getRandomHexColor();
-colorValue.textContent = getRandomHexColor();
+colorValue.textContent = body.style.backgroundColor;
 }
 button.addEventListener("click", changeColor);
 //Напиши скрипт, який змінює кольори фону елемента <body> через інлайн-стиль по кліку на button.change-color 

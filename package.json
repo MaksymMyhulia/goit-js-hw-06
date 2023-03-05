@@ -1,0 +1,27 @@
+{
+  "name": "goit-js-hw-06",
+  "version": "1.0.0",
+  "description": "\"DOM basics\"",
+  "main": "maks.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksymMyhulia/goit-js-hw-06.git"
+  },
+  "author": "Maksym Myhulia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaksymMyhulia/goit-js-hw-06/issues"
+  },
+  "homepage": "https://github.com/MaksymMyhulia/goit-js-hw-06#readme",
+  "dependencies": {
+    "joi": "^17.8.1",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "parcel": "^2.8.3"
+  }
+}
